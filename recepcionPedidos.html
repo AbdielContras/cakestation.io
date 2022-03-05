@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDOS | Cake Station</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid purple;
+        }
+
+            thead th:nth-child(1) {
+            width: 30%;
+        }
+
+            thead th:nth-child(2) {
+            width: 20%;
+        }
+
+            thead th:nth-child(3) {
+            width: 15%;
+        }
+
+            thead th:nth-child(4) {
+            width: 35%;
+        }
+
+            th, td {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Administración de pedidos</h2>
+    </header>
+    <br>
+
+    <table class="Pedidos">
+
+        <tr>
+
+            <th>CODIGO DE PEDIDO</th>
+
+            <th>CONTACTO CLIENTE</th>
+        
+            <th>DETALLE DE PEDIDO</th>
+        
+            <th>FECHA RECEPCION DE PEDIDO</th>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>T00001</td>
+
+            <td>Sebastian Dominguez, sebas@gmail.com, 9999559999</td>
+        
+            <td>3T,Helado Ch / Fresa, Mensaje "Felicidades Laura" / flores (R210,G75,B199)</td>
+        
+            <td>28/02/2022</td>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>T00002</td>
+
+            <td>Capitan Dovel, dovel@outlook.com, 9520005584</td>
+        
+            <td>3T,Zanahoria, Vela / Sprinkles</td>
+        
+            <td>01/03/2022</td>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>S00001</td>
+        
+            <td>Yahir Mendoza, yah@outlook.com, 9549546325</td>
+        
+            <td>S,Zanahoria / Limon, Mensaje "FELIZ ANIVERSARIO!" / Flores (R102,G232,B84)</td>
+        
+            <td>01/03/2022</td>
+        
+          </tr>
+        
+        </table><br>
+
+        <header>
+            <h2>Inventario</h2>
+        </header>
+        <br>
+
+        <table class="Stock">
+
+            <tr>
+    
+                <th>ELEMENTO</th>
+    
+                <th>CANTIDAD</th>
+            
+                <th>REQUERIDO PARA PEDIDOS</th>
+
+                <th>ESTATUS</th>
+            
+                            
+              </tr>
+            
+              <tr>
+            
+                <td>SABOR - Helado de chocolate</td>
+    
+                <td>30</td>
+            
+                <td>1</td>
+            
+                <td>OK</td>
+            
+              </tr>
+            
+              <tr>
+            
+                <td>SABOR - Zanahoria</td>
+    
+                <td>3</td>
+            
+                <td>2</td>
+            
+                <td>OK - Reabastecer</td>
+            
+              </tr>
+            
+              <tr>
+            
+                <td>SABOR - Fresa</td>
+    
+                <td>10</td>
+            
+                <td>1</td>
+            
+                <td>OK</td>
+            
+              </tr>
+
+              <tr>
+            
+                <td>SABOR - Limon</td>
+    
+                <td>5</td>
+            
+                <td>1</td>
+            
+                <td>OK</td>
+            
+              </tr>
+
+              <tr>
+            
+                <td>ADORNO - Merengue para mensaje y flores</td>
+    
+                <td>200</td>
+            
+                <td>4</td>
+            
+                <td>OK</td>
+            
+              </tr>
+
+              <td>ADORNO - Vela chispero</td>
+    
+                <td>130</td>
+            
+                <td>1</td>
+            
+                <td>OK</td>
+            
+              </tr>
+
+            </tr>
+
+            <td>ADORNO - Sprinkles colores</td>
+  
+              <td>500 botes (1 por pastel)</td>
+          
+              <td>1</td>
+          
+              <td>OK</td>
+          
+            </tr>
+
+            <td>TIPO PAN - Tres Leches</td>
+  
+              <td>70</td>
+          
+              <td>2</td>
+          
+              <td>OK</td>
+          
+            </tr>
+
+            </tr>
+
+            <td>TIPO PAN - Seco</td>
+
+                <td>50</td>
+            
+                <td>1</td>
+            
+                <td>OK</td>
+        
+            </tr>
+            
+            </table>
+
+</body>
+
+
+</html>

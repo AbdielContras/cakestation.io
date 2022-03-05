@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haz tu pedido | Cake Station</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Realiza tu pedido espacial</h1>
+    </header>
+    <hr>
+    
+    
+    <form action="pedido.js">
+        <h2>Información de contacto</h2>
+        <label for="Input1"> ¿Cuál es tu nombre?</label>
+        <br>
+        <input type="text" id="Input1" name="Input1"><br><br>
+
+        <label for="correo1">Ingresa tu correo</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        
+        <label for="tel1">Ingresa tu Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <hr>
+
+        <h2>Detalles del pedido</h2>
+        <label for="pastel">Tipo de pan</label>
+        <select id="pastel" name="pastel">
+            <option value="tresLeches">Tres leches</option>
+            <option value="seco">Seco</option>
+        </select><br><br>
+
+        <label for="sabor">De qué sabor lo quieres (puedes combinar)</label><br>
+        <input type="checkbox" id="topping1" name="topping1" value="hChocolate">
+        <label for="topping1">Helado de chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Zanahoria">
+        <label for="topping2">Zanahoria</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Fresa">
+        <label for="topping3">Fresa</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Limon">
+        <label for="topping3">Limón</label><br><br>
+
+        <label for="adorno">Adorna tu pastel (puedes seleccionar varios)</label><br>
+        <input type="checkbox" id="topping1" name="topping1" value="Mensaje">
+        <label for="topping1">Mensaje escrito en merengue (30 caracteres)</label><br>
+        <input type="text" id="Input1" name="Input1" maxlength="10"><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Vela">
+        <label for="topping2">Vela de chispero</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Flores">
+        <label for="topping3">Flores de merengue (elige el color)</label><br>
+        <input type="color" id="color1" name="color1"><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Sprinkles ">
+        <label for="topping3">Sprinkles de colores</label><br><br>
+
+        <a href="recepcionPedidos.html" target="blank"> 
+            <input type="button" value="Enviar pedido"> 
+        </a>
+    </form>
+    <br>
+    <footer>
+        <h3>Gracias por tu compra</h3>
+    </footer>
+</body>
+
+</html>
